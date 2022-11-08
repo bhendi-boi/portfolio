@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background: rgb(25, 25, 25);
+  --nav-background: rgb(250, 250, 250);
+  --intro-background: rgb(200, 200, 200);
+  --text-color: rgb(241, 238, 234);
+  --title: rgb(230, 230, 230);
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+section {
+  border-bottom: 0.2rem solid var(--nav-background);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--title);
+}

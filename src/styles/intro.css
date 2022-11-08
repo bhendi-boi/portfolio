@@ -1,0 +1,45 @@
+/* INTRO */
+
+.intro {
+    height: calc(100vh - 4.5rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: var(--intro-background); */
+}
+
+.image-container {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    background-color: var(--nav-background);
+}
+
+.intro p {
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--nav-background);
+    font-size: 2rem;
+}
+
+.intro .name {
+    font-weight: 500;
+}
+
+.intro .links {
+    display: flex;
+}
+
+.intro .links ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.intro .links img {
+    height: 2rem;
+}
