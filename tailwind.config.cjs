@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
+      colors: {
+        "nav-background": "#030303",
+        "logo-text": "#d3d3d3",
+        "intro-background": "#252525",
+        "input-text": "#e3dbd3",
+        "input-border": "#3333de",
+      },
+    },
+  },
+  plugins: [],
+};

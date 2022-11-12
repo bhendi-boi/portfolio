@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <main>
+      <main className="bg-intro-background">
         <Intro />
         <Contact />
       </main>
