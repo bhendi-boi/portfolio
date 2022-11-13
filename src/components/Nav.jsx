@@ -7,10 +7,10 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 left-0 py-3 z-50 bg-nav-background">
-      <div className="grid grid-cols-2">
+    <nav className="h-20 sticky top-0 left-0 py-3 z-50 bg-nav-background backdrop-blur">
+      <div className="flex items-center">
         <div className="flex mx-3 items-center gap-2 text-logo-text">
-          <figure className="w-12 h-12 bg-yellow-300 rounded-[50%]">
+          <figure className="w-14 h-14 bg-yellow-300 rounded-full">
             {/* <!-- icon for my name --> */}
           </figure>
           <h1>Jyothikrishna</h1>
@@ -31,7 +31,7 @@ const Nav = () => {
         </div>
       </div>
       {visible && (
-        <div className="sticky top-16 left-0 z-10 px-2">
+        <div className="sticky top-16 left-0 z-10 px-2 bg-nav-background">
           <ul className="list-none">
             <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
               skills
@@ -42,7 +42,7 @@ const Nav = () => {
             <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
               accomplishments
             </li>
-            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
+            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 pb-3">
               contact
             </li>
           </ul>
