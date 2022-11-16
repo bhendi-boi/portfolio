@@ -11,7 +11,8 @@ const Timeline = () => {
           <TimeLineItem
             title={item.title}
             details={item.details}
-            year={item.year}
+            start={item.start}
+            end={item.end}
           />
         ))}
       </section>

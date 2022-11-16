@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <main className="bg-background">
+      <main className="bg-background w-7/12 mx-auto">
         <Intro />
         <Timeline />
       </main>
