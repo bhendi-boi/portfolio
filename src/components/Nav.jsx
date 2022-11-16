@@ -21,11 +21,11 @@ const Nav = () => {
         >
           <div
             className={
-              "h-[0.2rem] w-6  relative bg-white before:content-[''] after:content-[''] before:h-[0.2rem] after:h-[0.2rem] before:absolute after:absolute  before:right-0 after:right-0 before:top-2 after:top-[-0.5rem] before:w-full after:w-full before:bg-white after:bg-white" +
+              "h-[0.2rem] w-6 relative bg-white before:content-[''] before:h-[0.2rem] before:absolute before:right-0 before:w-[150%] before:bg-white" +
               " " +
               (visible
-                ? "rotate-45 after:w-0 before:top-0 before:rotate-90"
-                : "")
+                ? "rotate-45 scale-125 before:w-[100%] before:top-0 before:left-0 before:rotate-90"
+                : "before:-top-2")
             }
           ></div>
         </div>
@@ -33,17 +33,29 @@ const Nav = () => {
       {visible && (
         <div className="sticky top-16 left-0 z-10 px-2 bg-nav-background">
           <ul className="list-none">
-            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
-              skills
+            <li
+              onClick={toggleVisible}
+              className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500"
+            >
+              <a href="#skills">skills</a>
             </li>
-            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
-              experience
+            <li
+              onClick={toggleVisible}
+              className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500"
+            >
+              <a href="#projects">projects</a>
             </li>
-            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500">
-              accomplishments
+            <li
+              onClick={toggleVisible}
+              className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500"
+            >
+              <a href="#timeline">timeline</a>
             </li>
-            <li className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 pb-3">
-              contact
+            <li
+              onClick={toggleVisible}
+              className="capitalize mx-2 my-3 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 pb-3"
+            >
+              <a href="#contact">contact me</a>
             </li>
           </ul>
         </div>
