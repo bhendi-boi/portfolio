@@ -7,7 +7,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="h-20 sticky top-0 left-0 py-3 z-50 bg-nav-background backdrop-blur">
+    <nav className="h-20 sticky top-0 left-0 py-3 z-50 bg-nav-background drop-shadow-2xl">
       <div className="flex items-center">
         <div className="flex mx-3 items-center gap-2 text-white">
           <figure className="w-14 h-14 bg-yellow-300 rounded-full">
