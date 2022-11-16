@@ -1,11 +1,10 @@
 const Footer = () => {
   return (
-    <footer>
-      <p>
-        &#169; <span class="year"></span> Jyothikrishna.
+    <footer className="bg-background">
+      <p className="text-gray-300">
+        &copy; <span class="year"></span> Jyothikrishna.
       </p>
-      <p>All rights reserved.</p>
-      <button>&#8593;</button>
+      <p className="text-gray-300">All rights reserved.</p>
     </footer>
   );
 };

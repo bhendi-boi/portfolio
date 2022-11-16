@@ -10,11 +10,14 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        "nav-background": "#030303",
+        "nav-background": "#000",
         "logo-text": "#d3d3d3",
-        "intro-background": "#252525",
+        background: "#121212",
         "input-text": "#e3dbd3",
-        "input-border": "#3333de",
+        // "input-border": "#3333de",
+      },
+      fontFamily: {
+        logo: ["Merriweather Sans", "sans-serif"],
       },
     },
   },
