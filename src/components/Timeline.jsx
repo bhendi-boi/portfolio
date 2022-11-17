@@ -4,8 +4,8 @@ import TimeLineItem from "./TimeLineItem";
 
 const Timeline = () => {
   return (
-    <section className="h-96 px-2 border-b border-slate-50" id="timeline">
-      <Title name="timeline" />
+    <section className="h-96 px-2 border-b border-slate-50">
+      <Title name="timeline" htmlID="timeline" />
       <section className="">
         {data.map((item) => (
           <TimeLineItem
