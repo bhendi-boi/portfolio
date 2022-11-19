@@ -3,7 +3,7 @@ import { SiGmail } from "react-icons/si";
 
 const Intro = () => {
   return (
-    <section className="h-[calc(100vh-4.5rem)] flex flex-col justify-evenly items-center border-b border-slate-50">
+    <section className="h-[calc(100vh-4.5rem)] flex flex-col justify-evenly items-center border-b-2 border-slate-50 border-opacity-20">
       <div className="flex flex-col items-center gap-4">
         <figure className="h-44 w-44 bg-yellow-300 rounded-full"></figure>
         <div>
@@ -21,7 +21,8 @@ const Intro = () => {
             <BsGithub
               size={36}
               color="white"
-              className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out"
+              enableBackground={true}
+              className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out "
             />
           </a>
         </li>
