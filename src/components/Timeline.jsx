@@ -2,9 +2,12 @@ import data from "../data/TimeLine";
 import Title from "./Title";
 import TimeLineItem from "./TimeLineItem";
 
-const Timeline = () => {
+const Timeline = ({ scrollRef }) => {
   return (
-    <section className="h-96 px-2 border-b-2 border-slate-50 border-opacity-20">
+    <section
+      ref={scrollRef}
+      className="h-96 px-2 border-b-2 border-slate-50 border-opacity-20"
+    >
       <Title name="timeline" htmlID="timeline" />
       <section className="">
         {data.map((item) => (

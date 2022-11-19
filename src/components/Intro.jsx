@@ -1,7 +1,7 @@
-import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 
-const Intro = () => {
+const Intro = ({ scrollRef }) => {
   return (
     <section className="h-[calc(100vh-4.5rem)] flex flex-col justify-evenly items-center border-b-2 border-slate-50 border-opacity-20">
       <div className="flex flex-col items-center gap-4">
@@ -15,13 +15,12 @@ const Intro = () => {
           </p>
         </div>
       </div>
-      <ul className="flex gap-4" id="contact">
+      <ul ref={scrollRef} className="flex gap-4" id="contact">
         <li>
           <a target="_blank" href="https://github.com/bhendi-boi">
             <BsGithub
               size={36}
               color="white"
-              enableBackground={true}
               className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out "
             />
           </a>
