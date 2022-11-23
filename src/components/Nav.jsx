@@ -18,7 +18,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
     }
   };
   return (
-    <nav className="h-20 sticky top-0 left-0 z-50 bg-nav-background drop-shadow-2xl border-b-2 border-slate-300">
+    <nav className="h-20 sticky top-0 left-0 z-50 bg-nav-background drop-shadow-2xl border-b-2 border-slate-50 border-opacity-25">
       <div className="w-full h-full flex items-center justify-between">
         <div className="flex mx-3 items-center gap-2 text-white">
           <figure className="w-12 h-12 bg-yellow-300 rounded-full">
@@ -26,6 +26,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
           </figure>
           <h1 className="text-2xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
+
         <div
           onClick={toggleVisible}
           className="m-4 ml-auto self-center cursor-pointer md:hidden"
@@ -41,6 +42,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
             return (
               <li
                 key={link}
+                onClick={(e) => handleClick(e)}
                 className="capitalize mx-2 py-1 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500"
               >
                 {link}
@@ -49,8 +51,9 @@ const Nav = ({ refs, handleScrollToSection }) => {
           })}
         </ul>
       </div>
+      {/* mobile toggle */}
       {visible && (
-        <div className="sticky top-16 left-0 z-10 px-2 bg-nav-background md:hidden border-b-2 border-slate-300 transition duration-250">
+        <div className="sticky top-16 left-0 z-10 px-2 bg-nav-background md:hidden border-b-2 border-slate-50 border-opacity-25 transition duration-250">
           <ul className="list-none">
             {links.map((link) => {
               return (
@@ -58,7 +61,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
                   key={link}
                   data-media="sm"
                   onClick={(e) => handleClick(e)}
-                  className="capitalize mx-2 py-1 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500"
+                  className="capitalize mx-2 py-1 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 last-of-type:py-2"
                 >
                   {link}
                 </li>
