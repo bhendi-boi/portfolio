@@ -28,7 +28,6 @@ const App = () => {
   };
 
   const handleScrollToSection = (name) => {
-    console.log(name);
     window.scrollTo({
       top: name.current.offsetTop - 84,
       left: 0,
