@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import About from "./components/About";
 // components
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
@@ -12,7 +13,6 @@ const App = () => {
   const projects = useRef(null);
   const co = useRef(null);
   const contact = useRef(null);
-  console.log(co);
   const refs = {
     timeline: timeline,
     projects: projects,
@@ -40,6 +40,7 @@ const App = () => {
       <Nav refs={refs} handleScrollToSection={handleScrollToSection} />
       <main ref={co} className="bg-background md:w-9/12 mx-2 sm:mx-auto">
         <Intro scrollRef={contact} />
+        <About />
         <Projects scrollRef={projects} />
         <Timeline scrollRef={timeline} />
       </main>

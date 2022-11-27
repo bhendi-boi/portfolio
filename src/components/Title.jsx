@@ -1,9 +1,6 @@
-const Title = ({ name, htmlID }) => {
+const Title = ({ name }) => {
   return (
-    <h2
-      id={htmlID}
-      className="capitalize mx-4 my-4 text-5xl font-semibold text-blue-500"
-    >
+    <h2 className="capitalize mx-4 my-4 text-5xl font-semibold text-blue-500">
       {name}
     </h2>
   );

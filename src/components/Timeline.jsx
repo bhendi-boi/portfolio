@@ -8,7 +8,7 @@ const Timeline = ({ scrollRef }) => {
       ref={scrollRef}
       className="h-96 px-2 border-b-2 border-slate-50 border-opacity-20"
     >
-      <Title name="timeline" htmlID="timeline" />
+      <Title name="timeline" />
       <section className="">
         {data.map((item) => (
           <TimeLineItem

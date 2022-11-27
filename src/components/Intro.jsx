@@ -38,7 +38,7 @@ const Intro = ({ scrollRef }) => {
           </a>
         </li>
         <li>
-          <a target="_blank" href="mailto:bhendiboi@gmail.com">
+          <a target="_blank" href="mailto:bhendiisgreen@gmail.com">
             <SiGmail
               size={36}
               color="white"

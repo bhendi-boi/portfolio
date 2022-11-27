@@ -61,7 +61,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
                   key={link}
                   data-media="sm"
                   onClick={(e) => handleClick(e)}
-                  className="capitalize mx-2 py-1 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 last-of-type:py-2"
+                  className="capitalize mx-2 py-2 cursor-pointer opacity-60 font-semibold text-lg text-logo-text hover:opacity-100 focus:opacity-100 transition-opacity duration-500 last-of-type:pb-3"
                 >
                   {link}
                 </li>
