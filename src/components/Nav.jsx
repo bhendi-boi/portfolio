@@ -43,7 +43,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
               <li
                 key={link}
                 onClick={(e) => handleClick(e)}
-                className="py-1 mx-2 text-lg font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
+                className="py-1 mx-2 text-xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
               >
                 {link}
               </li>
