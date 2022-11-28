@@ -8,7 +8,7 @@ const Contact = ({ scrollRef }) => {
           <BsGithub
             size={36}
             color="white"
-            className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out "
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110 "
           />
         </a>
       </li>
@@ -20,7 +20,7 @@ const Contact = ({ scrollRef }) => {
           <BsLinkedin
             size={36}
             color="white"
-            className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out"
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
           />
         </a>
       </li>
@@ -29,7 +29,7 @@ const Contact = ({ scrollRef }) => {
           <SiGmail
             size={36}
             color="white"
-            className="hover:scale-110 focus:scale-110 transition duration-200 ease-in-out"
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
           />
         </a>
       </li>

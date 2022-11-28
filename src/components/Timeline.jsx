@@ -6,7 +6,7 @@ const Timeline = ({ scrollRef }) => {
   return (
     <section
       ref={scrollRef}
-      className="h-96 px-2 border-b-2 border-slate-50 border-opacity-20"
+      className="px-2 border-b-2 h-96 border-slate-50 border-opacity-20"
     >
       <Title name="timeline" />
       <section className="">

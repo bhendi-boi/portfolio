@@ -4,7 +4,7 @@ const ScrollButton = ({ handleScrollToTop }) => {
   return (
     <button
       onClick={handleScrollToTop}
-      className="rounded-full z-50 opacity-70 hover:opacity-100 hover:scale-110"
+      className="z-50 rounded-full opacity-70 hover:opacity-100 hover:scale-110"
     >
       <FaAngleUp size={36} color="white" className="" />
     </button>
