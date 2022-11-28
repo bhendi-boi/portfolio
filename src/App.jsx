@@ -43,7 +43,7 @@ const App = () => {
         <Projects scrollRef={projects} />
         <Timeline scrollRef={timeline} />
       </main>
-      <Footer handleScrollToTop={handleScrollToTop} />
+      <Footer />
     </>
   );
 };

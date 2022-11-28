@@ -1,6 +1,8 @@
+import { useScrollRef } from "../hooks/useScrollRef";
 import ScrollButton from "./ScrollButton";
 
-const Footer = ({ handleScrollToTop }) => {
+const Footer = () => {
+  const handleScrollToTop = useScrollRef();
   return (
     <footer className="flex items-center justify-center gap-1 py-4 text-gray-300 bg-background opacity-60">
       <p>
