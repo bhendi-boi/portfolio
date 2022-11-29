@@ -53,15 +53,15 @@ const Nav = ({ refs, handleScrollToSection }) => {
       </div>
       {/* mobile toggle */}
       {visible && (
-        <div className="sticky left-0 z-10 px-2 transition border-b-2 border-opacity-25 top-16 bg-nav-background md:hidden border-slate-50 duration-250">
-          <ul className="list-none">
+        <div className="sticky left-0 z-10 transition border-b-2 border-opacity-25 top-16 md:hidden border-slate-50 duration-250">
+          <ul className="flex flex-col items-center h-screen gap-10 list-none py-14 bg-nav-background">
             {links.map((link) => {
               return (
                 <li
                   key={link}
                   data-media="sm"
                   onClick={(e) => handleClick(e)}
-                  className="py-2 mx-2 text-lg font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100 last-of-type:pb-3"
+                  className="text-4xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
                 >
                   {link}
                 </li>
