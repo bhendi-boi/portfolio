@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
+import LOGO from "../assets/logo.png";
 
 const Nav = ({ refs, handleScrollToSection }) => {
   const [visible, setVisible] = useState(false);
@@ -21,9 +22,10 @@ const Nav = ({ refs, handleScrollToSection }) => {
     <nav className="sticky top-0 left-0 z-50 h-20 border-b-2 border-opacity-25 bg-nav-background drop-shadow-2xl border-slate-50">
       <div className="flex items-center justify-between w-full h-full">
         <div className="flex items-center gap-2 mx-3 text-white">
-          <figure className="w-12 h-12 bg-yellow-300 rounded-full">
+          <picture className="w-12 h-12 overflow-hidden bg-yellow-300 rounded-full">
             {/* <!-- icon for my name --> */}
-          </figure>
+            <img src={LOGO} />
+          </picture>
           <h1 className="text-2xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
 
