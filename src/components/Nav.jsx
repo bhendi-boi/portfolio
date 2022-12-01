@@ -3,7 +3,9 @@ import { CgMenuRight } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 import LOGO from "../assets/logo.png";
 
+// eslint-disable-next-line react/prop-types
 const Nav = ({ refs, handleScrollToSection }) => {
+  const f = "df";
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
     setVisible((prev) => !prev);
@@ -24,7 +26,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
         <div className="flex items-center gap-2 mx-3 text-white">
           <picture className="w-12 h-12 overflow-hidden bg-yellow-300 rounded-full">
             {/* <!-- icon for my name --> */}
-            <img src={LOGO} />
+            <img src={LOGO} alt="jk logo" />
           </picture>
           <h1 className="text-2xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
