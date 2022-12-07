@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         logo: ["Merriweather Sans", "sans-serif"],
+        chips: ["Roboto", "sans-serif"],
       },
     },
   },
