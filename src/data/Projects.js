@@ -16,7 +16,7 @@ export default [
   },
   {
     name: "My Portfolio",
-    stack: ["react", "tailwind", "gH pages"],
+    stack: ["react", "tailwind", "gh pages"],
     details:
       "The website which you are currently seeing is this project. Working on this project made me good at using refs and finally deploying a site using github pages",
     url: "https://bhendi-boi.github.io/portfolio/",
