@@ -23,7 +23,7 @@ const About = () => {
         </p>
         <ul className="flex flex-col gap-4 pt-2 text-lg">
           <li className="inline-flex items-center gap-2">
-            <FaReact size={36} className="text-blue-700" /> React
+            <FaReact size={36} color="rgb(20,158,202)" /> React
           </li>
           <li className="inline-flex items-center gap-2">
             <SiReactrouter size={36} className="text-red-500" /> React Router
