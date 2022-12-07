@@ -21,27 +21,27 @@ const About = () => {
         <p className="mb-2 text-2xl font-medium text-slate-50">
           Frameworks and tools I use
         </p>
-        <ul className="flex flex-col gap-4 text-lg">
+        <ul className="flex flex-col gap-4 pt-2 text-lg">
           <li className="inline-flex items-center gap-2">
-            <FaReact size={36} color="white" /> React
+            <FaReact size={36} className="text-blue-700" /> React
           </li>
           <li className="inline-flex items-center gap-2">
-            <SiFirebase size={36} color="white" /> Firebase
+            <SiReactrouter size={36} className="text-red-500" /> React Router
           </li>
           <li className="inline-flex items-center gap-2">
-            <SiTailwindcss size={36} color="white" /> Tailwind CSS
+            <SiFirebase size={36} className="text-amber-300" /> Firebase
           </li>
           <li className="inline-flex items-center gap-2">
-            <SiReactrouter size={36} color="white" /> React Router
+            <SiTailwindcss size={36} className="text-cyan-500" /> Tailwind CSS
           </li>
           <li className="inline-flex items-center gap-2">
-            <FaGitAlt size={36} color="white" /> Git
+            <FaGitAlt size={36} className="text-red-500" /> Git
           </li>
           <li className="inline-flex items-center gap-2">
             <FaGithub size={36} color="white" /> GitHub
           </li>
           <li className="inline-flex items-center gap-2">
-            <SiVite size={36} color="white" /> Vite
+            <SiVite size={36} className="text-fuchsia-600" /> Vite
           </li>
         </ul>
       </div>
