@@ -6,7 +6,7 @@ import Contact from "./Contact";
 import viteSVG from "../assets/vite.svg";
 const About = ({ scrollRef }) => {
   return (
-    <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-slate-200">
+    <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-neutral-100">
       <Title name="about me" />
       <div className="px-4 mb-4">
         <p>
