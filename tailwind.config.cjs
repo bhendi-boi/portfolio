@@ -17,7 +17,7 @@ module.exports = {
         // "input-border": "#3333de",
       },
       fontFamily: {
-        logo: ["Merriweather Sans", "sans-serif"],
+        logo: ["Poppins", "sans-serif"],
         chips: ["Roboto", "sans-serif"],
         name: ["Pacifico", "cursive"],
       },
