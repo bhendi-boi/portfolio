@@ -37,9 +37,9 @@ const App = () => {
   return (
     <>
       <Nav refs={refs} handleScrollToSection={handleScrollToSection} />
-      <main ref={co} className="bg-background md:w-9/12 mx-2 sm:mx-auto">
-        <Intro scrollRef={contact} />
-        <About />
+      <main ref={co} className="mx-2 bg-background md:w-9/12 sm:mx-auto">
+        <Intro />
+        <About scrollRef={contact} />
         <Projects scrollRef={projects} />
         <Timeline scrollRef={timeline} />
       </main>

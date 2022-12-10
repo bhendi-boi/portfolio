@@ -5,7 +5,6 @@ import LOGO from "../assets/logo.png";
 
 // eslint-disable-next-line react/prop-types
 const Nav = ({ refs, handleScrollToSection }) => {
-  const f = "df";
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
     setVisible((prev) => !prev);
@@ -30,7 +29,6 @@ const Nav = ({ refs, handleScrollToSection }) => {
           </picture>
           <h1 className="text-2xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
-
         <div
           onClick={toggleVisible}
           className="self-center m-4 ml-auto cursor-pointer md:hidden"

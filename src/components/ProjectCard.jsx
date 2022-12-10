@@ -19,7 +19,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL }) => {
           return (
             <li
               key={item}
-              className="px-3 py-1 text-base font-medium text-gray-800 capitalize rounded-sm shadow-md md:text:xl bg-slate-200 font-chips ring-2 ring-slate-100 border-opacity-70"
+              className="px-3 py-1 text-base font-medium text-gray-800 capitalize rounded-sm shadow-md md:text:xl bg-neutral-100 font-chips ring-2 ring-neutral-100 border-opacity-70"
             >
               {item}
             </li>

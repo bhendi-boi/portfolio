@@ -1,8 +1,10 @@
-import Title from "./Title";
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiReactrouter } from "react-icons/si";
+// components
+import Title from "./Title";
+import Contact from "./Contact";
 import viteSVG from "../assets/vite.svg";
-const About = () => {
+const About = ({ scrollRef }) => {
   return (
     <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-slate-200">
       <Title name="about me" />
@@ -41,6 +43,7 @@ const About = () => {
           </li>
         </ul>
       </div>
+      <Contact scrollRef={scrollRef} />
     </section>
   );
 };
