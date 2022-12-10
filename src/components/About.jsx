@@ -8,7 +8,7 @@ const About = ({ scrollRef }) => {
   return (
     <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-neutral-100">
       <Title name="about me" />
-      <div className="px-4 mb-4">
+      <div className="px-4 mb-4 text-lg">
         <p>
           Hello 👋, I am{" "}
           <span className="px-2 text-lg font-name">Jyothikrishna</span> from
@@ -16,7 +16,7 @@ const About = ({ scrollRef }) => {
         </p>
       </div>
       <div className="px-4">
-        <p className="mb-2 text-2xl font-medium text-slate-50">
+        <p className="mb-2 text-2xl font-medium text-neutral-50">
           Frameworks and tools I use
         </p>
         <ul className="flex flex-col gap-4 pt-2 text-lg">
