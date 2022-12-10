@@ -1,11 +1,7 @@
 import Title from "./Title";
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiVite,
-  SiFirebase,
-  SiReactrouter,
-} from "react-icons/si";
+import { SiTailwindcss, SiFirebase, SiReactrouter } from "react-icons/si";
+import viteSVG from "../assets/vite.svg";
 const About = () => {
   return (
     <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-slate-200">
@@ -35,13 +31,13 @@ const About = () => {
             <SiTailwindcss size={36} className="text-cyan-500" /> Tailwind CSS
           </li>
           <li className="inline-flex items-center gap-2">
-            <FaGitAlt size={36} className="text-red-500" /> Git
+            <FaGitAlt size={36} className="text-red-600" /> Git
           </li>
           <li className="inline-flex items-center gap-2">
             <FaGithub size={36} color="white" /> GitHub
           </li>
           <li className="inline-flex items-center gap-2">
-            <SiVite size={36} className="text-fuchsia-600" /> Vite
+            <img src={viteSVG} alt="vite svg" /> Vite
           </li>
         </ul>
       </div>
