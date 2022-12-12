@@ -24,7 +24,7 @@ const Intro = () => {
         </div>
       </div>
       <a
-        className="inline-flex items-center gap-2 px-4 py-2 font-bold uppercase border-2 rounded-md outline-none cursor-pointer text-nav-background border-neutral-50 bg-neutral-50 hover:bg"
+        className="inline-flex items-center gap-2 px-4 py-2 font-bold uppercase transition-colors duration-200 border-2 rounded-md outline-none cursor-pointer text-nav-background border-neutral-50 bg-neutral-50 hover:bg-blue-500 hover:border-blue-500 hover:text-white"
         href="../assets/cv.pdf"
         download
       >
