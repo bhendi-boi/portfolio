@@ -5,7 +5,7 @@ const Contact = ({ scrollRef }) => {
     <ul
       role="list"
       ref={scrollRef}
-      className="flex justify-center gap-4 self-center col-span-2"
+      className="flex self-center justify-center col-span-2 gap-4"
     >
       <li>
         <a
