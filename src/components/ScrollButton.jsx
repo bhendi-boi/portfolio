@@ -5,11 +5,11 @@ const ScrollButton = ({ handleScrollToTop }) => {
     <button
       onClick={handleScrollToTop}
       aria-label="scroll to top button"
-      className="z-50 rounded-full "
+      className="z-50 rounded-full"
     >
       <FaAngleUp
         size={36}
-        className="text-white transition-colors duration-200 hover:scale-110 hover:text-blue-500"
+        className="text-white transition duration-200 hover:scale-110 hover:text-blue-500"
       />
     </button>
   );
