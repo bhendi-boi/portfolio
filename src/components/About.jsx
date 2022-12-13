@@ -37,7 +37,7 @@ const About = () => {
           <li className="inline-flex items-center gap-2">
             <FaGithub size={36} color="white" /> GitHub
           </li>
-          <li className="inline-flex items-center gap-2">
+          <li className="inline-flex items-center gap-2 mb-2">
             <img src={viteSVG} alt="vite svg" /> Vite
           </li>
         </ul>
