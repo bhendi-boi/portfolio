@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { CgMenuRight } from "react-icons/cg";
-import { AiOutlineClose } from "react-icons/ai";
-import LOGO from "../assets/logo.png";
 import MobileNav from "./MobileNav";
 
-// eslint-disable-next-line react/prop-types
+import { CgMenuRight } from "react-icons/cg";
+import LOGO from "../assets/logo.png";
+
 const Nav = ({ refs, handleScrollToSection }) => {
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
@@ -33,11 +32,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
           onClick={toggleVisible}
           className="self-center m-4 ml-auto cursor-pointer md:hidden"
         >
-          {!visible ? (
-            <CgMenuRight color="white" size={36} />
-          ) : (
-            <AiOutlineClose color="white" size={36} />
-          )}
+          <CgMenuRight color="white" size={36} />
         </div>
         <ul className="items-center hidden mr-6 list-none md:flex">
           {links.map((link) => {
@@ -54,7 +49,13 @@ const Nav = ({ refs, handleScrollToSection }) => {
         </ul>
       </div>
       {/* mobile toggle */}
-      {visible && <MobileNav links={links} handleClick={handleClick} />}
+      {visible && (
+        <MobileNav
+          links={links}
+          handleClick={handleClick}
+          toggleVisible={toggleVisible}
+        />
+      )}
     </nav>
   );
 };

@@ -1,7 +1,15 @@
-const MobileNav = ({ links, handleClick }) => {
-  return (
-    <div className="sticky left-0 z-10 transition border-b-2 border-opacity-25 top-16 md:hidden border-slate-50 duration-250">
-      <ul className="flex flex-col items-center h-screen gap-10 list-none py-14 bg-nav-background">
+import ReactDom from "react-dom";
+import { AiOutlineClose } from "react-icons/ai";
+const MobileNav = ({ links, handleClick, toggleVisible }) => {
+  return ReactDom.createPortal(
+    <>
+      <AiOutlineClose
+        onClick={toggleVisible}
+        color="white"
+        size={36}
+        className="absolute cursor-pointer right-4 top-6"
+      />
+      <ul className="flex flex-col items-center h-screen gap-10 mt-6 list-none py-14 bg-nav-background">
         {links.map((link) => {
           return (
             <li
@@ -15,7 +23,8 @@ const MobileNav = ({ links, handleClick }) => {
           );
         })}
       </ul>
-    </div>
+    </>,
+    document.querySelector("#portal")
   );
 };
 
