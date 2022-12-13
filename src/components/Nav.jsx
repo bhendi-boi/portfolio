@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 import LOGO from "../assets/logo.png";
+import MobileNav from "./MobileNav";
 
 // eslint-disable-next-line react/prop-types
 const Nav = ({ refs, handleScrollToSection }) => {
@@ -13,7 +14,6 @@ const Nav = ({ refs, handleScrollToSection }) => {
   const handleClick = (e) => {
     const element = e.target;
     const section = element.innerText.toLowerCase();
-    // console.log(refs[section]);
     handleScrollToSection(refs[section]);
     if (element.getAttribute("data-media") === "sm") {
       toggleVisible();
@@ -54,24 +54,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
         </ul>
       </div>
       {/* mobile toggle */}
-      {visible && (
-        <div className="sticky left-0 z-10 transition border-b-2 border-opacity-25 top-16 md:hidden border-slate-50 duration-250">
-          <ul className="flex flex-col items-center h-screen gap-10 list-none py-14 bg-nav-background">
-            {links.map((link) => {
-              return (
-                <li
-                  key={link}
-                  data-media="sm"
-                  onClick={(e) => handleClick(e)}
-                  className="text-4xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
-                >
-                  {link}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
+      {visible && <MobileNav links={links} handleClick={handleClick} />}
     </nav>
   );
 };
