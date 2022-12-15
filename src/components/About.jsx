@@ -5,9 +5,9 @@ import Title from "./Title";
 import viteSVG from "../assets/vite.svg";
 const About = () => {
   return (
-    <section className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 border-slate-50 border-opacity-20 text-neutral-100">
+    <section className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 border-slate-50 border-opacity-20 text-gray-200">
       <Title name="about me" />
-      <div className="px-4 mb-4 text-lg">
+      <div className="px-4 mb-4">
         <p>
           Hello 👋, I am{" "}
           <span className="px-2 text-lg font-name">Jyothikrishna</span> from
