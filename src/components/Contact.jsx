@@ -12,6 +12,7 @@ const Contact = ({ scrollRef }) => {
           aria-label="github-icon"
           target="_blank"
           href="https://github.com/bhendi-boi"
+          title="Github Profile"
         >
           <BsGithub
             size={36}
@@ -24,6 +25,7 @@ const Contact = ({ scrollRef }) => {
           aria-label="linkedin-icon"
           target="_blank"
           href="https://www.linkedin.com/in/jyothikrishna-sajja-96bb45226/"
+          title="Linked-in Profile"
         >
           <BsLinkedin
             size={36}
@@ -36,6 +38,7 @@ const Contact = ({ scrollRef }) => {
           aria-label="gmail-icon"
           target="_blank"
           href="mailto:bhendiisgreen@gmail.com"
+          title="mail me"
         >
           <SiGmail
             size={36}

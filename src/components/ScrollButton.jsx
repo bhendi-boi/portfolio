@@ -6,6 +6,7 @@ const ScrollButton = ({ handleScrollToTop }) => {
       onClick={handleScrollToTop}
       aria-label="scroll to top button"
       className="z-50 rounded-full"
+      title="Scroll Up?"
     >
       <FaAngleUp
         size={36}
