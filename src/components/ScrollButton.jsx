@@ -4,7 +4,7 @@ const ScrollButton = ({ handleScrollToTop }) => {
     <button
       onClick={handleScrollToTop}
       aria-label="scroll to top button"
-      className="z-50 rounded-full"
+      className="rounded-full"
       title="Scroll Up?"
     >
       <TfiArrowUp
