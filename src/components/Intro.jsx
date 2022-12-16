@@ -3,7 +3,7 @@ const imageSrc =
 
 const Intro = () => {
   return (
-    <section className="flex flex-col items-center min-h-screen border-b-2 justify-evenly border-slate-50 border-opacity-20">
+    <section className="flex flex-col items-center min-h-screen border-b-2 justify-evenly dark:border-slate-50 dark:border-opacity-20">
       <div className="flex flex-col items-center gap-4">
         <picture className="overflow-hidden bg-yellow-300 rounded-full h-52 w-52 md:h-72 md:w-72">
           <img
@@ -13,10 +13,10 @@ const Intro = () => {
           />
         </picture>
         <div className="font-logo">
-          <h2 className="pb-2 text-3xl font-medium text-center text-white">
+          <h2 className="pb-2 text-3xl font-medium text-center dark:text-white">
             Jyothikrishna
           </h2>
-          <p className="text-3xl font-medium text-center text-white">
+          <p className="text-3xl font-medium text-center dark:text-white">
             React Developer
           </p>
         </div>
