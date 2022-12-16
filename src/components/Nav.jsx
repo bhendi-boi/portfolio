@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
+import useTheme from "../useTheme";
 
 const Nav = ({ refs, handleScrollToSection }) => {
   const [visible, setVisible] = useState(false);
@@ -16,20 +18,40 @@ const Nav = ({ refs, handleScrollToSection }) => {
       toggleVisible();
     }
   };
+
+  //
+  const [choosenTheme, toggleTheme] = useTheme();
+  console.log(choosenTheme);
+  //
   return (
-    <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-nav-background drop-shadow-2xl border-slate-50">
+    <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl border-slate-50">
       <div className="flex items-center justify-between w-full h-16">
-        <div className="flex items-center h-full gap-2 mx-4 text-white">
+        <div className="flex items-center h-full gap-2 mx-4 dark:text-white">
           <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
+        </div>
+        <div>
+          {choosenTheme === "dark" ? (
+            <MdOutlineDarkMode
+              size={30}
+              className="dark:text-white"
+              onClick={toggleTheme}
+            />
+          ) : (
+            <MdOutlineLightMode
+              size={30}
+              className="dark:text-white"
+              onClick={toggleTheme}
+            />
+          )}
         </div>
         <div
           onClick={toggleVisible}
           className="self-center m-4 ml-auto cursor-pointer md:hidden"
         >
           {visible ? (
-            <AiOutlineClose color="white" size={30} />
+            <AiOutlineClose size={30} className="dark:text-white" />
           ) : (
-            <CgMenuRight color="white" size={30} />
+            <CgMenuRight size={30} className="dark:text-white" />
           )}
         </div>
         <ul className="items-center hidden mr-6 list-none md:flex">
