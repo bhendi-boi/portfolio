@@ -24,24 +24,24 @@ const Nav = ({ refs, handleScrollToSection }) => {
   //
   return (
     <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl border-slate-50">
-      <div className="flex items-center justify-between h-16 md:w-3/4 md:mx-auto">
-        <div className="flex items-center h-full gap-2 mx-4 dark:text-white">
+      <div className="flex items-center justify-around h-16 md:w-3/4 md:mx-auto">
+        <div className="flex items-center justify-between w-full h-full dark:text-white">
           <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
-        </div>
-        <div>
-          {choosenTheme === "dark" ? (
-            <MdOutlineDarkMode
-              size={30}
-              className="dark:text-white"
-              onClick={toggleTheme}
-            />
-          ) : (
-            <MdOutlineLightMode
-              size={30}
-              className="dark:text-white"
-              onClick={toggleTheme}
-            />
-          )}
+          <div className="mx-2">
+            {choosenTheme === "dark" ? (
+              <MdOutlineDarkMode
+                size={30}
+                className="dark:text-white"
+                onClick={toggleTheme}
+              />
+            ) : (
+              <MdOutlineLightMode
+                size={30}
+                className="dark:text-white"
+                onClick={toggleTheme}
+              />
+            )}
+          </div>
         </div>
         <div
           onClick={toggleVisible}
@@ -59,7 +59,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
               <li
                 key={link}
                 onClick={(e) => handleClick(e)}
-                className="py-1 mx-2 text-xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
+                className="py-1 mx-2 text-xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 dark:text-logo-text hover:opacity-100 focus:opacity-100"
               >
                 {link}
               </li>
