@@ -25,7 +25,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
   return (
     <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl border-slate-50">
       <div className="flex items-center justify-around h-16 md:w-3/4 md:mx-auto">
-        <div className="flex items-center justify-between w-full h-full dark:text-white">
+        <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
           <div className="mx-2">
             {choosenTheme === "dark" ? (
