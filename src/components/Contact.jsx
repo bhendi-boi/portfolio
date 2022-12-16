@@ -5,7 +5,7 @@ const Contact = ({ scrollRef }) => {
     <ul
       role="list"
       ref={scrollRef}
-      className="flex self-center justify-center col-span-2 gap-4"
+      className="flex self-center justify-center col-span-2 gap-4 text-gray-900 dark:text-white"
     >
       <li>
         <a
@@ -16,7 +16,7 @@ const Contact = ({ scrollRef }) => {
         >
           <BsGithub
             size={36}
-            className="transition duration-200 ease-in-out dark:text-white hover:scale-110 focus:scale-110 hover:text-blue-500"
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
           />
         </a>
       </li>
@@ -29,7 +29,7 @@ const Contact = ({ scrollRef }) => {
         >
           <BsLinkedin
             size={36}
-            className="transition duration-200 ease-in-out dark:text-white hover:scale-110 focus:scale-110 hover:text-blue-500"
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
           />{" "}
         </a>
       </li>
@@ -42,7 +42,7 @@ const Contact = ({ scrollRef }) => {
         >
           <SiGmail
             size={36}
-            className="transition duration-200 ease-in-out dark:text-white hover:scale-110 focus:scale-110 hover:text-blue-500"
+            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
           />
         </a>
       </li>
