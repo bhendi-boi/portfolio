@@ -21,11 +21,10 @@ const Nav = ({ refs, handleScrollToSection }) => {
 
   //
   const [choosenTheme, toggleTheme] = useTheme();
-  console.log(choosenTheme);
   //
   return (
     <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl border-slate-50">
-      <div className="flex items-center justify-between w-full h-16">
+      <div className="flex items-center justify-between h-16 md:w-3/4 md:mx-auto">
         <div className="flex items-center h-full gap-2 mx-4 dark:text-white">
           <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
