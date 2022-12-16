@@ -23,10 +23,12 @@ const Nav = ({ refs, handleScrollToSection }) => {
   const [choosenTheme, toggleTheme] = useTheme();
   //
   return (
-    <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl border-slate-50">
+    <nav className="sticky top-0 left-0 z-50 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl ">
       <div className="flex items-center justify-around h-16 md:w-3/4 md:mx-auto">
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
-          <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
+          <h1 className="text-3xl font-bold tracking-wider font-name">
+            Jyothikrishna
+          </h1>
           <div className="mx-2">
             {choosenTheme === "dark" ? (
               <MdOutlineDarkMode
@@ -53,7 +55,7 @@ const Nav = ({ refs, handleScrollToSection }) => {
             <CgMenuRight size={30} className="dark:text-white" />
           )}
         </div>
-        <ul className="items-center hidden mr-6 list-none md:flex">
+        <ul className="items-center hidden mr-6 tracking-wider list-none md:flex">
           {links.map((link) => {
             return (
               <li
