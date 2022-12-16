@@ -14,12 +14,12 @@ const Projects = ({ scrollRef }) => {
         duration: 0.5,
         ease: "easeInOut",
       }}
-      className="px-2 border-b-2 border-slate-50 border-opacity-20"
+      className="px-2 border-b-2 dark:border-slate-50 dark:border-opacity-20"
     >
       <Title name="projects" />
       <motion.section
         transition={{ staggerChildren: 0.5 }}
-        className="grid gap-6 my-4 md:gap-4 md:mx-0 sm:place-items-center md:grid-cols-2 last:pb-4"
+        className="grid gap-8 my-4 md:gap-4 md:mx-0 sm:place-items-center md:grid-cols-2 last:pb-4"
       >
         {data.map((project) => {
           return (
