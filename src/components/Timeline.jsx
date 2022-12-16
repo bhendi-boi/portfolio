@@ -18,7 +18,7 @@ const Timeline = ({ scrollRef }) => {
       className="px-2 border-b-2 min-h-[calc(100vh-5rem)] border-slate-50 border-opacity-20"
     >
       <Title name="timeline" />
-      <section className="ml-2">
+      <motion.section transition={{ staggerChildren: 0.5 }} className="ml-2">
         {data.map((item) => (
           <TimeLineItem
             key={item.title}
@@ -30,7 +30,7 @@ const Timeline = ({ scrollRef }) => {
             category={item.category}
           />
         ))}
-      </section>
+      </motion.section>
     </motion.section>
   );
 };
