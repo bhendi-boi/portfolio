@@ -2,8 +2,6 @@ import { useState } from "react";
 import { CgMenuRight } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 
-// import LOGO from "../assets/logo.png";
-
 const Nav = ({ refs, handleScrollToSection }) => {
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
@@ -19,12 +17,9 @@ const Nav = ({ refs, handleScrollToSection }) => {
     }
   };
   return (
-    <nav className="sticky top-0 left-0 z-50 min-h-[4rem] border-b-2 border-opacity-25 bg-nav-background drop-shadow-2xl border-slate-50">
-      <div className="flex items-center justify-between w-full h-full">
+    <nav className="sticky top-0 left-0 z-50 border-b-2 border-opacity-25 bg-nav-background drop-shadow-2xl border-slate-50">
+      <div className="flex items-center justify-between w-full bg-pink-500 h-16">
         <div className="flex items-center h-full gap-2 mx-4 text-white">
-          {/* <picture className="w-10 h-10 overflow-hidden bg-yellow-300 rounded-full">
-            <img src={LOGO} alt="jk logo" />
-          </picture> */}
           <h1 className="text-3xl font-semibold font-logo">Jyothikrishna</h1>
         </div>
         <div
