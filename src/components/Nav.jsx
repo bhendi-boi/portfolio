@@ -70,14 +70,17 @@ const Nav = ({ refs, handleScrollToSection }) => {
       </div>
       {/* mobile toggle */}
       {visible && (
-        <ul role="list" className="flex flex-col bg-nav-background last:pb-2">
+        <ul
+          role="list"
+          className="flex flex-col bg-neutral-50 dark:bg-nav-background last:pb-2 dark:text-white"
+        >
           {links.map((link) => {
             return (
               <li
                 key={link}
                 data-media="sm"
                 onClick={(e) => handleClick(e)}
-                className="px-4 py-2 text-2xl capitalize transition-opacity duration-500 cursor-pointer font-semi bold opacity-60 text-logo-text hover:opacity-100 focus:opacity-100"
+                className="px-4 py-2 text-2xl capitalize transition-opacity duration-500 cursor-pointer font-semi bold opacity-60 hover:opacity-100 focus:opacity-100"
               >
                 {link}
               </li>
