@@ -1,10 +1,19 @@
+import { motion } from "framer-motion";
 import Title from "./Title";
 import data from "../data/Projects";
 import ProjectCard from "./ProjectCard";
 const Projects = ({ scrollRef }) => {
   return (
-    <section
+    <motion.section
       ref={scrollRef}
+      initial={{ x: "-100%" }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: false, margin: "20px 0px 0px 0px" }}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
       className="px-2 border-b-2 border-slate-50 border-opacity-20"
     >
       <Title name="projects" />
@@ -22,7 +31,7 @@ const Projects = ({ scrollRef }) => {
           );
         })}
       </section>
-    </section>
+    </motion.section>
   );
 };
 

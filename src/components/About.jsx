@@ -1,11 +1,22 @@
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiReactrouter } from "react-icons/si";
+import { motion } from "framer-motion";
 // components
 import Title from "./Title";
 import viteSVG from "../assets/vite.svg";
 const About = () => {
   return (
-    <section className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 border-slate-50 border-opacity-20 text-gray-200">
+    <motion.section
+      initial={{ x: "-100%" }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: false, margin: "20px 0px 0px 0px" }}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
+      className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 border-slate-50 border-opacity-20 text-gray-200"
+    >
       <Title name="about me" />
       <div className="px-4 mb-4">
         <p>
@@ -42,7 +53,7 @@ const About = () => {
           </li>
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
