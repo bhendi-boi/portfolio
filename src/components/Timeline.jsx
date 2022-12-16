@@ -15,7 +15,7 @@ const Timeline = ({ scrollRef }) => {
         duration: 0.5,
         ease: "easeInOut",
       }}
-      className="px-2 border-b-2 min-h-[calc(100vh-5rem)] border-slate-50 border-opacity-20"
+      className="px-2 border-b-2 min-h-[calc(100vh-5rem)] dark:border-slate-50 dark:border-opacity-20"
     >
       <Title name="timeline" />
       <motion.section transition={{ staggerChildren: 0.5 }} className="ml-2">
