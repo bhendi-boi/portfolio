@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useTheme = () => {
-  const [theme, setTheme] = useState(localStorage.theme);
+  const [theme, setTheme] = useState(
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  );
   const choosenTheme = theme !== "dark" ? "dark" : "light";
   useEffect(() => {
     const root = window.document.documentElement;
