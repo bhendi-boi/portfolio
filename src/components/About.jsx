@@ -15,7 +15,7 @@ const About = () => {
         duration: 0.5,
         ease: "easeInOut",
       }}
-      className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 border-slate-50 border-opacity-20 text-gray-200"
+      className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 dark:border-slate-50 dark:border-opacity-20 dark:text-gray-200"
     >
       <Title name="about me" />
       <div className="px-4 mb-4">
@@ -26,7 +26,7 @@ const About = () => {
         </p>
       </div>
       <div className="px-4">
-        <p className="mb-2 text-2xl font-medium text-neutral-50">
+        <p className="mb-2 text-2xl font-medium dark:text-neutral-50">
           Frameworks and tools I use
         </p>
         <ul className="flex flex-col gap-4 pt-2 text-lg">
@@ -46,7 +46,7 @@ const About = () => {
             <FaGitAlt size={36} className="text-red-600" /> Git
           </li>
           <li className="inline-flex items-center gap-2">
-            <FaGithub size={36} color="white" /> GitHub
+            <FaGithub size={36} className="dark:text-white" /> GitHub
           </li>
           <li className="inline-flex items-center gap-2 mb-2">
             <img src={viteSVG} alt="vite svg" /> Vite
