@@ -9,7 +9,7 @@ const Timeline = ({ scrollRef }) => {
       ref={scrollRef}
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}
-      viewport={{ once: false, margin: "20px 0px 0px 0px" }}
+      viewport={{ once: true, margin: "20px 0px 0px 0px" }}
       transition={{
         type: "tween",
         duration: 0.5,
