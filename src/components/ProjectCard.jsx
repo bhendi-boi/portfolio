@@ -1,8 +1,19 @@
+import { motion } from "framer-motion";
 const ProjectCard = ({ name, stack, details, url, imageURL }) => {
   // TODO!
   // making the images fit in the container
   return (
-    <article className="mx-2 text-gray-200 rounded-md shadow-2xl sm:w-96 md:w-full bg-slate-800">
+    <motion.article
+      initial={{ x: "-100%" }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: true, margin: "10px 0px 0px 0px" }}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
+      className="mx-2 text-gray-200 rounded-md shadow-2xl sm:w-96 md:w-full bg-slate-800"
+    >
       <picture className="flex flex-col gap-2 overflow-hidden bg-yellow-300 h-60">
         <a target="_blank" href={url} className="border-none">
           <img src={imageURL} alt={`${name} photo`} className="object-cover" />
@@ -24,7 +35,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL }) => {
           );
         })}
       </ul>
-    </article>
+    </motion.article>
   );
 };
 
