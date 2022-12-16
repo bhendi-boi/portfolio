@@ -29,7 +29,7 @@ const App = () => {
 
   const handleScrollToSection = (name) => {
     window.scrollTo({
-      top: name.current.offsetTop - 84,
+      top: name.current.offsetTop - 230,
       left: 0,
       behavior: "smooth",
     });
@@ -37,13 +37,13 @@ const App = () => {
   return (
     <>
       <Nav refs={refs} handleScrollToSection={handleScrollToSection} />
-      <main ref={co} className="mx-2 bg-background md:w-9/12 sm:mx-auto">
+      <main ref={co} className="px-2 md:w-3/4 md:mx-auto">
         <Intro />
-        <About scrollRef={contact} />
+        <About />
         <Projects scrollRef={projects} />
         <Timeline scrollRef={timeline} />
       </main>
-      <Footer handleScrollToTop={handleScrollToTop} />
+      <Footer handleScrollToTop={handleScrollToTop} scrollRef={contact} />
     </>
   );
 };

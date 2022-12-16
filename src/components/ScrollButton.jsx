@@ -1,13 +1,16 @@
-import { FaAngleUp } from "react-icons/fa";
-
+import { TfiArrowUp } from "react-icons/tfi";
 const ScrollButton = ({ handleScrollToTop }) => {
   return (
     <button
       onClick={handleScrollToTop}
       aria-label="scroll to top button"
-      className="z-50 rounded-full opacity-70 hover:opacity-100 hover:scale-110"
+      className="rounded-full"
+      title="Scroll Up?"
     >
-      <FaAngleUp size={36} color="white" className="" />
+      <TfiArrowUp
+        size={36}
+        className="transition duration-200 hover:scale-110 hover:text-blue-500"
+      />
     </button>
   );
 };

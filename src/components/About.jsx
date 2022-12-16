@@ -1,14 +1,24 @@
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiReactrouter } from "react-icons/si";
+import { motion } from "framer-motion";
 // components
 import Title from "./Title";
-import Contact from "./Contact";
 import viteSVG from "../assets/vite.svg";
-const About = ({ scrollRef }) => {
+const About = () => {
   return (
-    <section className="min-h-screen leading-6 border-b-2 border-slate-50 border-opacity-20 text-neutral-100">
+    <motion.section
+      initial={{ x: "-100%" }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: true, margin: "20px 0px 0px 0px" }}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
+      className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 dark:border-slate-50 dark:border-opacity-20 dark:text-gray-200"
+    >
       <Title name="about me" />
-      <div className="px-4 mb-4 text-lg">
+      <div className="px-4 mb-4">
         <p>
           Hello 👋, I am{" "}
           <span className="px-2 text-lg font-name">Jyothikrishna</span> from
@@ -16,7 +26,7 @@ const About = ({ scrollRef }) => {
         </p>
       </div>
       <div className="px-4">
-        <p className="mb-2 text-2xl font-medium text-neutral-50">
+        <p className="mb-2 text-2xl font-medium dark:text-neutral-50">
           Frameworks and tools I use
         </p>
         <ul className="flex flex-col gap-4 pt-2 text-lg">
@@ -36,15 +46,14 @@ const About = ({ scrollRef }) => {
             <FaGitAlt size={36} className="text-red-600" /> Git
           </li>
           <li className="inline-flex items-center gap-2">
-            <FaGithub size={36} color="white" /> GitHub
+            <FaGithub size={36} className="dark:text-white" /> GitHub
           </li>
-          <li className="inline-flex items-center gap-2">
+          <li className="inline-flex items-center gap-2 mb-2">
             <img src={viteSVG} alt="vite svg" /> Vite
           </li>
         </ul>
       </div>
-      <Contact scrollRef={scrollRef} />
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,14 +1,15 @@
 import ScrollButton from "./ScrollButton";
-
-const Footer = ({ handleScrollToTop }) => {
+import Contact from "./Contact";
+const Footer = ({ handleScrollToTop, scrollRef }) => {
   return (
-    <footer className="flex items-center justify-center gap-1 py-4 text-gray-300 bg-background opacity-60">
-      <p>
+    <footer className="flex flex-col gap-4 py-4 bg-background dark:bg-dark-background">
+      <p className="inline-flex items-center justify-center gap-2 text-center text-zinc-900 dark:text-zinc-400">
         Copyright &copy; {new Date().getFullYear()}{" "}
         <span className="font-medium">Jyothikrishna</span>{" "}
         <span className="hidden sm:inline">All rights reserved.</span>{" "}
+        <ScrollButton handleScrollToTop={handleScrollToTop} />
       </p>
-      <ScrollButton handleScrollToTop={handleScrollToTop} />
+      <Contact scrollRef={scrollRef} />
     </footer>
   );
 };
