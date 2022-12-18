@@ -14,7 +14,7 @@ const Projects = ({ scrollRef }) => {
         duration: 0.5,
         ease: "easeInOut",
       }}
-      className="px-2 border-b-2 dark:border-slate-50 dark:border-opacity-20"
+      className="px-4  border-b-2 dark:border-slate-50 dark:border-opacity-20"
     >
       <Title name="projects" />
       <motion.section

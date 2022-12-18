@@ -15,17 +15,15 @@ const About = () => {
         duration: 0.5,
         ease: "easeInOut",
       }}
-      className="min-h-[calc(100vh-5rem)] leading-6 border-b-2 dark:border-slate-50 dark:border-opacity-20 dark:text-gray-200"
+      className="px-4 mb-4 min-h-[calc(100vh-5rem)] leading-6 border-b-2 dark:border-slate-50 dark:border-opacity-20 dark:text-gray-200"
     >
       <Title name="about me" />
-      <div className="px-4 mb-4">
-        <p>
-          Hello 👋, I am{" "}
-          <span className="px-2 text-lg font-name">Jyothikrishna</span> from
-          Chirala, AP. I love making interactive and responsive UI.
-        </p>
-      </div>
-      <div className="px-4">
+      <p>
+        Hello 👋, I am{" "}
+        <span className="text-lg font-name px-2">Jyothikrishna</span> from
+        Chirala, AP. I love making interactive and responsive UI.
+      </p>
+      <div className="mt-4">
         <p className="mb-2 text-2xl font-medium dark:text-neutral-50">
           Frameworks and tools I use
         </p>
