@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         "nav-background": "#222",
         "logo-text": "#d3d3d3",
-        backgrund: "eee",
+        backgrund: "#eee",
         "dark-background": "#141414",
         "input-text": "#e3dbd3",
       },
