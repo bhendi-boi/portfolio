@@ -4,7 +4,7 @@ import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import useTheme from "../useTheme";
 
-const Nav = ({ refs, handleScrollToSection }) => {
+const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
     setVisible((prev) => !prev);
@@ -20,17 +20,20 @@ const Nav = ({ refs, handleScrollToSection }) => {
   };
 
   //
-  const [choosenTheme, toggleTheme] = useTheme();
+  const [theme, toggleTheme] = useTheme();
   //
   return (
     <nav className="sticky top-0 left-0 z-50 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl ">
       <div className="flex items-center justify-around h-16 md:w-3/4 md:mx-auto">
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
-          <h1 className="text-3xl font-bold tracking-wider font-name">
+          <h1
+            onClick={handleScrollToTop}
+            className="text-4xl font-bold tracking-wide font-name decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
+          >
             Jyothikrishna
           </h1>
           <div className="mx-2">
-            {choosenTheme === "dark" ? (
+            {theme === "dark" ? (
               <MdOutlineDarkMode
                 size={30}
                 className="dark:text-white"

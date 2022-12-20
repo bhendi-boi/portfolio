@@ -36,7 +36,12 @@ const App = () => {
   };
   return (
     <>
-      <Nav refs={refs} handleScrollToSection={handleScrollToSection} />
+      <Nav
+        refs={refs}
+        handleScrollToSection={handleScrollToSection}
+        handleScrollToTop={handleScrollToTop}
+      />
+      {/* px-2 exists so that border will now to till the end of screen */}
       <main ref={co} className="px-2 md:w-3/4 md:mx-auto">
         <Intro />
         <About />
