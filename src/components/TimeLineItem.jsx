@@ -6,7 +6,7 @@ const TimeLineItem = ({ title, start, end, details, links, category }) => {
     <motion.article
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}
-      viewport={{ once: true, margin: "10px 0px 0px 0px" }}
+      viewport={{ once: true, margin: "15px" }}
       transition={{
         type: "tween",
         duration: 0.5,

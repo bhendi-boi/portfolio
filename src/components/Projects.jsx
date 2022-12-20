@@ -18,7 +18,7 @@ const Projects = ({ scrollRef }) => {
     >
       <Title name="projects" />
       <motion.section
-        transition={{ staggerChildren: 0.5 }}
+        transition={{ staggerChildren: 1 }}
         className="grid gap-8 my-4 md:gap-4 md:mx-0 sm:place-items-center md:grid-cols-2 last:pb-4"
       >
         {data.map((project) => {
