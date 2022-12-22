@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = ({ scrollRef }) => {
   return (
     <motion.section
+      aria-labelledby="projects"
       ref={scrollRef}
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}

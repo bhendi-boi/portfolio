@@ -6,6 +6,7 @@ import TimeLineItem from "./TimeLineItem";
 const Timeline = ({ scrollRef }) => {
   return (
     <motion.section
+      aria-labelledby="timeline"
       ref={scrollRef}
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}
@@ -18,7 +19,7 @@ const Timeline = ({ scrollRef }) => {
       className="px-2 border-b-2 min-h-[calc(100vh-5rem)] dark:border-slate-50 dark:border-opacity-20"
     >
       <Title name="timeline" />
-      <motion.section transition={{ staggerChildren: 1 }} className="ml-4">
+      <motion.div transition={{ staggerChildren: 1 }} className="ml-4">
         {data.map((item) => (
           <TimeLineItem
             key={item.title}
@@ -30,7 +31,7 @@ const Timeline = ({ scrollRef }) => {
             category={item.category}
           />
         ))}
-      </motion.section>
+      </motion.div>
     </motion.section>
   );
 };

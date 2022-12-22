@@ -7,6 +7,7 @@ import viteSVG from "../assets/vite.svg";
 const About = () => {
   return (
     <motion.section
+      aria-labelledby="about me"
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}
       viewport={{ once: true, margin: "20px 0px 0px 0px" }}
