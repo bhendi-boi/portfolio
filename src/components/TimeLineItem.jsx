@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 const TimeLineItem = ({ title, start, end, details, links, category }) => {
-  const END = end ? end : "present";
+  const END = end ? end : "Present";
 
   return (
     <motion.article
@@ -18,7 +18,7 @@ const TimeLineItem = ({ title, start, end, details, links, category }) => {
         <h3 className="text-2xl font-medium text-dark-800 dark:text-neutral-50">
           {title}
         </h3>
-        <span className="inline-flex gap-4 text-sm capitalize opacity-50">
+        <span className="inline-flex gap-4 text-sm opacity-50">
           {category}
           <span>
             {start} - {END}

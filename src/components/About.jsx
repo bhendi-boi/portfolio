@@ -7,7 +7,7 @@ import viteSVG from "../assets/vite.svg";
 const About = () => {
   return (
     <motion.section
-      aria-labelledby="about me"
+      aria-labelledby="About me"
       initial={{ x: "-100%" }}
       whileInView={{ x: 0 }}
       viewport={{ once: true, margin: "20px 0px 0px 0px" }}
@@ -18,10 +18,10 @@ const About = () => {
       }}
       className="px-4 mb-4 min-h-[calc(100vh-5rem)] leading-6 border-b-2 dark:border-slate-50 dark:border-opacity-20 dark:text-gray-200"
     >
-      <Title name="about me" />
+      <Title name="About me" />
       <p>
         Hello 👋, I am{" "}
-        <span className="text-lg font-title px-2">Jyothikrishna</span> from
+        <span className="px-2 text-lg font-title">Jyothikrishna</span> from
         Chirala, AP. I love making interactive and responsive UI.
       </p>
       <div className="mt-4">

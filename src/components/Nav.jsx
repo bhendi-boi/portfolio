@@ -9,7 +9,7 @@ const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
   const toggleVisible = () => {
     setVisible((prev) => !prev);
   };
-  const links = ["projects", "timeline", "contact"];
+  const links = ["Projects", "Timeline", "Contact"];
   const handleClick = (e) => {
     const element = e.target;
     const section = element.innerText.toLowerCase();
@@ -64,7 +64,7 @@ const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
               <li
                 key={link}
                 onClick={(e) => handleClick(e)}
-                className="py-1 mx-2 text-xl font-semibold capitalize transition-opacity duration-500 cursor-pointer opacity-60 dark:text-logo-text hover:opacity-100 focus:opacity-100"
+                className="py-1 mx-2 text-xl font-semibold transition-opacity duration-500 cursor-pointer opacity-60 dark:text-logo-text hover:opacity-100 focus:opacity-100"
               >
                 {link}
               </li>
@@ -84,7 +84,7 @@ const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
                 key={link}
                 data-media="sm"
                 onClick={(e) => handleClick(e)}
-                className="px-4 py-2 text-2xl capitalize transition-opacity duration-500 cursor-pointer font-semi bold opacity-60 hover:opacity-100 focus:opacity-100"
+                className="px-4 py-2 text-2xl transition-opacity duration-500 cursor-pointer font-semi bold opacity-60 hover:opacity-100 focus:opacity-100"
               >
                 {link}
               </li>

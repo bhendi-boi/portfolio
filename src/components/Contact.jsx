@@ -6,7 +6,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
       <ul
         role="list"
         ref={scrollRef}
-        className="flex self-center justify-center col-span-2 gap-4 font-medium text-lg"
+        className="flex self-center justify-center col-span-2 gap-4 text-lg font-medium"
       >
         <li>
           <a
@@ -42,7 +42,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           </a>
         </li>
       </ul>
-      <ScrollButton handleScrollToTop={handleScrollToTop} />
+      <ScrollButton small={true} handleScrollToTop={handleScrollToTop} />
     </div>
   );
 };
