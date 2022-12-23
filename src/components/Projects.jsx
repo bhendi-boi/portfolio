@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Title from "./Title";
-import data from "../data/Projects";
+import data from "../assets/Projects";
 import ProjectCard from "./ProjectCard";
 const Projects = ({ scrollRef }) => {
   return (

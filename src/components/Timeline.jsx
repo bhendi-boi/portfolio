@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import data from "../data/TimeLine";
+import data from "../assets/TimeLine";
 import Title from "./Title";
 import TimeLineItem from "./TimeLineItem";
 

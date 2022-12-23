@@ -13,7 +13,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL }) => {
         ease: "easeInOut",
         staggerChildren: 1,
       }}
-      className="mx-2 overflow-hidden text-gray-600 rounded-lg shadow-2xl dark:text-gray-200 sm:w-96 md:w-full bg-neutral-50 dark:bg-gray-800"
+      className="mx-2 overflow-hidden text-gray-800 rounded-lg shadow-2xl dark:text-gray-200 sm:w-96 md:w-full bg-neutral-50 dark:bg-gray-800"
     >
       <picture className="flex flex-col gap-2 overflow-hidden bg-yellow-300 h-60">
         <img src={imageURL} alt={`${name} photo`} className="object-cover" />
@@ -35,7 +35,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL }) => {
           return (
             <li
               key={item}
-              className="px-3 py-1 text-base font-medium capitalize bg-gray-800 rounded-sm shadow-md text-neutral-50 dark:text-black md:text:xl dark:bg-neutral-50 font-chips ring-2 ring-gray-800 dark:ring-neutral-50 border-opacity-70"
+              className="px-3 py-1 text-base font-medium capitalize bg-gray-800     bg:opacity-90 rounded-sm shadow-md text-neutral-50 dark:text-black md:text:xl dark:bg-neutral-50 font-chips ring-2 ring-gray-800 dark:ring-neutral-50 border-opacity-70"
             >
               {item}
             </li>

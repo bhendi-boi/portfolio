@@ -4,12 +4,12 @@ const ScrollButton = ({ handleScrollToTop }) => {
     <button
       onClick={handleScrollToTop}
       aria-label="scroll to top button"
-      className="rounded-full"
+      className="rounded-full inline"
       title="Scroll Up?"
     >
       <TfiArrowUp
         size={36}
-        className="transition duration-200 hover:scale-110 hover:text-blue-500"
+        className="transition duration-200 text-gray-900 hover:scale-110 hover:text-blue-400"
       />
     </button>
   );

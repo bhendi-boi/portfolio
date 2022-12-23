@@ -11,11 +11,10 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        "nav-background": "#222",
-        "logo-text": "#d3d3d3",
-        backgrund: "#eee",
+        "nav-background": "#202020",
+        "logo-text": "#e3dbd3",
+        backgrund: "#fafafa",
         "dark-background": "#141414",
-        "input-text": "#e3dbd3",
       },
       fontFamily: {
         title: ["Catamaran", "sans-serif"],
