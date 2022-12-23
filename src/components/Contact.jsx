@@ -2,11 +2,11 @@ import ScrollButton from "./ScrollButton";
 
 const Contact = ({ scrollRef, handleScrollToTop }) => {
   return (
-    <div className="flex justify-center gap-6">
+    <div className="flex justify-center gap-6 text-gray-900 dark:text-white">
       <ul
         role="list"
         ref={scrollRef}
-        className="flex self-center justify-center col-span-2 gap-4 font-medium text-lg text-gray-900 dark:text-white"
+        className="flex self-center justify-center col-span-2 gap-4 font-medium text-lg"
       >
         <li>
           <a
@@ -14,7 +14,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href="https://github.com/bhendi-boi"
             title="Github Profile"
-            className="transition duration-200 text-gray-900 hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400"
           >
             Github
           </a>
@@ -25,7 +25,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href="https://www.linkedin.com/in/jyothikrishna-sajja-96bb45226/"
             title="Linked-in Profile"
-            className="transition duration-200 text-gray-900 hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400"
           >
             Linkedin
           </a>
@@ -36,7 +36,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             target="_blank"
             href="mailto:bhendiisgreen@gmail.com"
             title="mail me"
-            className="transition duration-200 text-gray-900 hover:scale-110 hover:text-blue-400"
+            className="transition hover:scale-110 hover:text-blue-400"
           >
             Gmail
           </a>

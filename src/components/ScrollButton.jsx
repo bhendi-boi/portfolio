@@ -9,7 +9,7 @@ const ScrollButton = ({ handleScrollToTop }) => {
     >
       <TfiArrowUp
         size={36}
-        className="transition duration-200 text-gray-900 hover:scale-110 hover:text-blue-400"
+        className="transition  hover:scale-110 hover:text-blue-400 dark:hover:text-blue-500"
       />
     </button>
   );
