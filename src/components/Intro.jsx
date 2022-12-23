@@ -12,7 +12,7 @@ const Intro = () => {
         ease: "easeIn",
         duration: 1,
       }}
-      className="flex flex-col items-center min-h-[calc(100vh-4rem)] border-b-2 justify-evenly dark:border-slate-50 dark:border-opacity-20"
+      className="flex flex-col items-center min-h-[calc(100vh-4.25rem)] border-b-2 justify-evenly dark:border-slate-50 dark:border-opacity-20"
     >
       <div className="flex flex-col items-center gap-4">
         <picture className="overflow-hidden bg-yellow-300 rounded-full h-52 w-52 md:h-72 md:w-72">

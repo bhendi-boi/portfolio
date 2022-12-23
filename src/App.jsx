@@ -1,6 +1,6 @@
 import { useRef } from "react";
+import { useScroll, motion, useSpring } from "framer-motion";
 import About from "./components/About";
-// components
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Nav from "./components/Nav";
@@ -34,6 +34,13 @@ const App = () => {
       behavior: "smooth",
     });
   };
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <>
       <Nav
@@ -42,7 +49,11 @@ const App = () => {
         handleScrollToTop={handleScrollToTop}
       />
       {/* px-2 exists so that border will now to till the end of screen */}
-      <main ref={co} className="px-2 md:w-3/4 md:mx-auto">
+      <main ref={co} className="relative px-2 md:w-3/4 md:mx-auto">
+        <motion.div
+          className="fixed inset-0 z-50 h-1 bg-blue-600 dark:bg-neutral-50 top-16"
+          style={{ scaleX: scaleX, transformOrigin: "left" }}
+        />
         <Intro />
         <About />
         <Projects scrollRef={projects} />

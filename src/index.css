@@ -80,3 +80,11 @@ select {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom css */
+.project__card-details {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
