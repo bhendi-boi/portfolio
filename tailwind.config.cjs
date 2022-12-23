@@ -17,9 +17,8 @@ module.exports = {
         "dark-background": "#141414",
       },
       fontFamily: {
-        title: ["Catamaran", "sans-serif"],
+        title: ["Lato", "sans-serif"],
         chips: ["Roboto", "sans-serif"],
-        name: ["Lato", "sans-serif"],
         body: ["Source Sans Pro", "sans-serif"],
       },
     },

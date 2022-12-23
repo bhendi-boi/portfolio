@@ -28,7 +28,7 @@ const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1
             onClick={handleScrollToTop}
-            className="text-4xl font-bold tracking-wide font-name decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
+            className="text-4xl font-bold tracking-wide font-title decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
           >
             Jyothikrishna
           </h1>

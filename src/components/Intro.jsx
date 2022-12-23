@@ -22,7 +22,7 @@ const Intro = () => {
             className="object-cover aspect-square"
           />
         </picture>
-        <div className="tracking-wider font-name">
+        <div className="tracking-wider font-title">
           <h2 className="pb-2 text-3xl font-medium text-center dark:text-white">
             Jyothikrishna
           </h2>

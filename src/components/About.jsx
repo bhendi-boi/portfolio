@@ -21,7 +21,7 @@ const About = () => {
       <Title name="about me" />
       <p>
         Hello 👋, I am{" "}
-        <span className="text-lg font-name px-2">Jyothikrishna</span> from
+        <span className="text-lg font-title px-2">Jyothikrishna</span> from
         Chirala, AP. I love making interactive and responsive UI.
       </p>
       <div className="mt-4">
