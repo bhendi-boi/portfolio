@@ -23,12 +23,12 @@ const Nav = ({ refs, handleScrollToSection, handleScrollToTop }) => {
   const [theme, toggleTheme] = useTheme();
   //
   return (
-    <nav className="sticky top-0 left-0 z-50 bg-neutral-50 dark:bg-nav-background drop-shadow-2xl ">
+    <nav className="sticky top-0 left-0 z-50 shadow-xl bg-neutral-50/30 dark:bg-nav-background backdrop-blur">
       <div className="flex items-center justify-around h-16 md:w-3/4 md:mx-auto">
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1
             onClick={handleScrollToTop}
-            className="text-4xl font-bold tracking-wide font-title decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
+            className="text-4xl font-medium tracking-wide font-name decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
           >
             Jyothikrishna
           </h1>

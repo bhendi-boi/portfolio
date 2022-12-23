@@ -17,6 +17,7 @@ module.exports = {
         "dark-background": "#141414",
       },
       fontFamily: {
+        name: ["Fredoka One", "cursive"],
         title: ["Lato", "sans-serif"],
         chips: ["Roboto", "sans-serif"],
         body: ["Source Sans Pro", "sans-serif"],
