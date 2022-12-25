@@ -6,7 +6,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
       <ul
         role="list"
         ref={scrollRef}
-        className="flex self-center justify-center col-span-2 gap-4 text-lg font-medium"
+        className="flex self-center justify-center col-span-2 gap-4 text-lg font-medium font-chips"
       >
         <li>
           <a

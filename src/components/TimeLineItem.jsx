@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const TimeLineItem = ({ title, start, end, details, links, category }) => {
+const TimeLineItem = ({ title, start, end, details, category }) => {
   const END = end ? end : "Present";
 
   return (
@@ -25,7 +25,8 @@ const TimeLineItem = ({ title, start, end, details, links, category }) => {
           </span>
         </span>
       </div>
-      <p className="leading-5 opacity-90">{details}</p>
+      {/* <p className="leading-5 opacity-90">{details}</p> */}
+      {details}
     </motion.article>
   );
 };
