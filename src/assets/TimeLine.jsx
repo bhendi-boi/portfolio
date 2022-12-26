@@ -41,7 +41,7 @@ function ReactDeveloperDetails() {
 function BTechDetails() {
   return (
     <p className="leading-5 opacity-90">
-      I am my pursuing my Bachelors from
+      I am my pursuing my Bachelors from{" "}
       <a
         href="https://iiitdm.ac.in/"
         target="_blank"
