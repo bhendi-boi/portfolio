@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useScroll, motion, useSpring } from "framer-motion";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -40,6 +40,10 @@ const App = () => {
     damping: 30,
     restDelta: 0.001,
   });
+  const [visible, setVisible] = useState(false);
+  const toggleVisible = () => {
+    setVisible((prev) => !prev);
+  };
 
   return (
     <>
@@ -47,13 +51,18 @@ const App = () => {
         refs={refs}
         handleScrollToSection={handleScrollToSection}
         handleScrollToTop={handleScrollToTop}
+        visible={visible}
+        toggleVisible={toggleVisible}
       />
       {/* px-2 exists so that border will now to till the end of screen */}
       <main ref={co} className="relative px-2 md:w-3/4 md:mx-auto">
-        <motion.div
-          className="fixed inset-0 z-50 h-1 bg-blue-600 dark:bg-neutral-50 top-16"
-          style={{ scaleX: scaleX, transformOrigin: "left" }}
-        />
+        {!visible && (
+          <motion.div
+            className="fixed inset-0 z-50 h-1 bg-emerald-600 dark:bg-neutral-50 top-16"
+            style={{ scaleX: scaleX, transformOrigin: "left" }}
+          />
+        )}
+
         <Intro />
         <About />
         <Projects scrollRef={projects} />
