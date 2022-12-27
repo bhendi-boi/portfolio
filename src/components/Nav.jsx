@@ -105,7 +105,7 @@ const Nav = ({
                 duration: 0.12,
               }}
               role="list"
-              className="flex flex-col absolute right-0 w-1/3 min-h-full bg-neutral-50 dark:bg-nav-background last:pb-2"
+              className="flex flex-col absolute right-0 w-1/2 min-h-full bg-neutral-50 dark:bg-nav-background last:pb-2"
             >
               {links.map((link) => {
                 return (
@@ -116,7 +116,7 @@ const Nav = ({
                       handleClick(e);
                       toggleVisible();
                     }}
-                    className="px-4 py-2 text-2xl transition-colors duration-500 cursor-pointer font-semi bold text-blue-600 hover:text-blue-500"
+                    className="px-6 font-title py-2 text-3xl transition-colors duration-500 cursor-pointer font-semi bold text-gray-900 hover:text-blue-500"
                   >
                     {link}
                   </li>

@@ -29,7 +29,7 @@ const App = () => {
 
   const handleScrollToSection = (name) => {
     window.scrollTo({
-      top: name.current.offsetTop - 230,
+      top: name.current.offsetTop - 10,
       left: 0,
       behavior: "smooth",
     });

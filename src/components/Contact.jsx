@@ -41,6 +41,17 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
             Gmail
           </a>
         </li>
+        <li>
+          <a
+            aria-label="devcommunity-icon"
+            target="_blank"
+            href="https://dev.to/bhendi"
+            title="Dev.to profile"
+            className="transition hover:scale-110 hover:text-blue-400"
+          >
+            Dev.to
+          </a>
+        </li>
       </ul>
       <ScrollButton small={true} handleScrollToTop={handleScrollToTop} />
     </div>

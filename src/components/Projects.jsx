@@ -39,7 +39,7 @@ const Projects = ({ scrollRef }) => {
             />
           );
         })}
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {selectedId && (
             <motion.article
               layoutId={data[selectedId].name}
@@ -75,7 +75,6 @@ const Projects = ({ scrollRef }) => {
               <p className="mx-6 min-h-[78px] project__card-details">
                 {data[selectedId].details}
               </p>
-              {/* chips */}
               <ul className="flex gap-4 justify-center m-4 mb-6 px-4 min-h-[2rem]">
                 {data[selectedId].stack.map((item) => {
                   return (
@@ -90,7 +89,7 @@ const Projects = ({ scrollRef }) => {
               </ul>
             </motion.article>
           )}
-        </AnimatePresence>
+        </AnimatePresence> */}
       </motion.section>
     </motion.section>
   );
