@@ -28,8 +28,17 @@ const App = () => {
   };
 
   const handleScrollToSection = (name) => {
+    if (name === "contact") {
+      console.log("first");
+      window.scrollTo({
+        behavior: "smooth",
+        left: 0,
+        top: document.body.offsetHeight,
+      });
+      return;
+    }
     window.scrollTo({
-      top: name.current.offsetTop - 10,
+      top: refs[name].current.offsetTop - 10,
       left: 0,
       behavior: "smooth",
     });

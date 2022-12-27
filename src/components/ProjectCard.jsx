@@ -24,6 +24,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL, setSelectId }) => {
       </h3>
       <span className="mx-6 text-sm">
         <a
+          target="_blank"
           href={url}
           className="text-blue-600 hover:underline hover:underline-offset-2"
         >

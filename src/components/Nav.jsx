@@ -15,7 +15,7 @@ const Nav = ({
   const handleClick = (e) => {
     const element = e.target;
     const section = element.innerText.toLowerCase();
-    handleScrollToSection(refs[section]);
+    handleScrollToSection(section);
     if (element.getAttribute("data-media") === "sm") {
       toggleVisible();
     }
@@ -25,7 +25,7 @@ const Nav = ({
   const [theme, toggleTheme] = useTheme();
   //
   return (
-    <motion.nav
+    <nav
       className={
         "sticky top-0 left-0 z-50 shadow-xl backdrop-blur-sm " +
         (visible
@@ -126,7 +126,7 @@ const Nav = ({
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
   );
 };
 
