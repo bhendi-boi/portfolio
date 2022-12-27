@@ -67,7 +67,7 @@ const App = () => {
       <main ref={co} className="relative px-2 md:w-3/4 md:mx-auto">
         {!visible && (
           <motion.div
-            className="fixed inset-0 z-50 h-1 bg-emerald-600 dark:bg-neutral-50 top-16"
+            className="fixed inset-0 z-50 h-1 bg-teal-600 dark:bg-neutral-50/80 top-16"
             style={{ scaleX: scaleX, transformOrigin: "left" }}
           />
         )}

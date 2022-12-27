@@ -21,14 +21,16 @@ const About = () => {
       <Title name="About me" />
       <p>
         Hello 👋, I am{" "}
-        <span className="px-2 text-lg font-title">Jyothikrishna</span> from
-        Chirala, AP. I love making interactive and responsive UI.
+        <span className="px-2 text-lg font-semibold tracking-wide uppercase font-title">
+          Jyothikrishna
+        </span>{" "}
+        from Chirala, AP. I love making interactive and responsive UI.
       </p>
-      <div className="mt-4">
+      <div className="mt-2">
         <p className="mb-2 text-2xl font-medium dark:text-neutral-50">
           Frameworks and tools I use
         </p>
-        <ul className="flex flex-col gap-4 pt-2 text-lg">
+        <ul className="flex flex-col gap-4 pt-2 text-lg md:text-xl">
           <li className="inline-flex items-center gap-2">
             <FaReact size={36} color="rgb(20,158,202)" /> React
           </li>

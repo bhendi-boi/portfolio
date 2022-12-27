@@ -38,7 +38,7 @@ const Nav = ({
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1
             onClick={handleScrollToTop}
-            className="text-4xl font-medium tracking-wide font-name decoration-1 text-emerald-600 dark:text-white hover:cursor-pointer"
+            className="text-4xl font-medium tracking-wide text-teal-600 font-name decoration-1 dark:text-neutral-50 hover:cursor-pointer"
           >
             Jyothikrishna
           </h1>
@@ -91,7 +91,7 @@ const Nav = ({
             }}
             whileInView={{ opacity: 1 }}
             onClick={toggleVisible}
-            className="absolute right-0 min-h-screen  bg-gray-700/50 w-full"
+            className="absolute right-0 w-full min-h-screen bg-gray-700/50"
           >
             <motion.ul
               initial={{
@@ -105,7 +105,7 @@ const Nav = ({
                 duration: 0.12,
               }}
               role="list"
-              className="flex flex-col absolute right-0 w-1/2 min-h-full bg-neutral-50 dark:bg-nav-background last:pb-2"
+              className="absolute right-0 flex flex-col w-1/2 min-h-full bg-neutral-50 dark:bg-nav-background last:pb-2"
             >
               {links.map((link) => {
                 return (
@@ -116,7 +116,7 @@ const Nav = ({
                       handleClick(e);
                       toggleVisible();
                     }}
-                    className="px-6 font-title py-2 text-3xl transition-colors duration-500 cursor-pointer font-semi bold text-gray-900 hover:text-blue-500"
+                    className="px-6 py-2 text-3xl text-gray-900 transition-colors duration-500 cursor-pointer font-title font-semi bold hover:text-blue-500"
                   >
                     {link}
                   </li>
