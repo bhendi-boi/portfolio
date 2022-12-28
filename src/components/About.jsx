@@ -27,7 +27,9 @@ const About = () => {
         from Chirala, AP. I love making interactive and responsive UI.
       </p>
       <div className="mt-2">
-        <p className="mb-2 font-medium">Frameworks and tools I use :</p>
+        <p className="mb-2 font-semibold tracking-wide">
+          Frameworks and tools I use :
+        </p>
         <ul className="flex flex-col gap-4 pt-2 text-lg md:text-xl">
           <li className="inline-flex items-center gap-2 md:gap-3">
             <FaReact size={36} color="rgb(20,158,202)" /> React

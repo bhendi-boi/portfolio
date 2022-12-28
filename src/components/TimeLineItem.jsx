@@ -25,8 +25,7 @@ const TimeLineItem = ({ title, start, end, details, category }) => {
           </span>
         </span>
       </div>
-      {/* <p className="leading-5 opacity-90">{details}</p> */}
-      {details}
+      <p className="leading-6 opacity-90">{details}</p>
     </motion.article>
   );
 };
