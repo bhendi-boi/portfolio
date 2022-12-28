@@ -30,7 +30,7 @@ function ReactDeveloperDetails() {
       <a
         href="https://github.com/bhendi-boi"
         target="_blank"
-        className="text-blue-600 hover:underline hover:underline-offset-2"
+        className="text-blue-600 dark:text-blue-400 hover:underline hover:underline-offset-2"
       >
         Github
       </a>{" "}
@@ -45,7 +45,7 @@ function BTechDetails() {
       <a
         href="https://iiitdm.ac.in/"
         target="_blank"
-        className="text-blue-600 hover:underline hover:underline-offset-2"
+        className="text-blue-600 dark:text-blue-400 hover:underline hover:underline-offset-2"
       >
         IIITDM, Kancheepuram.
       </a>{" "}
@@ -61,7 +61,7 @@ function PritJCDetails() {
       <a
         href="https://csclub.netlify.app/"
         target="_blank"
-        className="text-blue-600 hover:underline hover:underline-offset-2"
+        className="text-blue-600 dark:text-blue-400 hover:underline hover:underline-offset-2"
       >
         CS Club IIITDM, Kancheepuram.
       </a>{" "}

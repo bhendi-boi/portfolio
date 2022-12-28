@@ -14,7 +14,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL, setSelectId }) => {
         ease: "easeInOut",
         staggerChildren: 1,
       }}
-      className="mx-2 overflow-hidden text-gray-800 rounded-lg shadow-2xl dark:text-gray-200 sm:w-96 bg-neutral-50 dark:bg-gray-800 project__card"
+      className="mx-2 overflow-hidden text-gray-800 rounded-lg shadow-2xl dark:text-gray-200 sm:w-96 bg-neutral-50 dark:bg-black project__card"
     >
       <picture className="flex flex-col gap-2 overflow-hidden bg-yellow-300 h-60">
         <img src={imageURL} alt={`${name} photo`} className="object-cover" />

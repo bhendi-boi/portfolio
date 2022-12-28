@@ -38,7 +38,7 @@ const Nav = ({
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1
             onClick={handleScrollToTop}
-            className="text-4xl font-medium tracking-wide text-teal-600 font-name decoration-1 dark:text-neutral-50 hover:cursor-pointer"
+            className="text-4xl font-semibold tracking-wider text-teal-600 font-name decoration-1 dark:text-neutral-50 hover:cursor-pointer"
           >
             Jyothikrishna
           </h1>
