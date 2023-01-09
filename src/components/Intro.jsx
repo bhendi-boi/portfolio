@@ -24,7 +24,7 @@ const Intro = () => {
           />
         </picture>
         <div className="flex flex-col items-center justify-center gap-4">
-          <span className="block text-3xl font-bold tracking-wider text-transparent uppercase font-name bg-clip-text bg-gradient-to-r from-teal-600 to-sky-600">
+          <span className="block text-3xl font-bold tracking-wider dark:text-white uppercase font-name ">
             Jyothikrishna
           </span>
           <span className="text-xl font-medium text-center dark:text-white">

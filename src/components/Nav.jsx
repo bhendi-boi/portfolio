@@ -30,7 +30,7 @@ const Nav = ({
         "sticky top-0 left-0 z-50 shadow-xl backdrop-blur-sm " +
         (visible
           ? "bg-neutral-50 dark:bg-nav-background"
-          : "bg-neutral-50/70 dark:bg-nav-background/70")
+          : "bg-neutral-50/70 dark:bg-nav-background")
       }
     >
       {/* wrapper so that nav also has 3/4 width */}
@@ -38,12 +38,12 @@ const Nav = ({
         <div className="flex items-center justify-between w-full h-full mx-4 md:m-0 dark:text-white">
           <h1
             onClick={handleScrollToTop}
-            className="text-4xl font-semibold tracking-wider text-teal-600 font-name decoration-1 dark:text-neutral-50 hover:cursor-pointer"
+            className="text-4xl font-semibold dark:font-medium tracking-wider text-teal-600 font-name  dark:text-neutral-50 hover:cursor-pointer"
           >
             Jyothikrishna
           </h1>
           <div className="mx-2">
-            {theme === "dark" ? (
+            {theme === "light" ? (
               <MdOutlineDarkMode
                 size={30}
                 className="dark:text-white"
@@ -116,7 +116,7 @@ const Nav = ({
                       handleClick(e);
                       toggleVisible();
                     }}
-                    className="px-6 py-2 text-3xl text-gray-900 transition-colors duration-500 cursor-pointer font-title font-semi bold hover:text-blue-500"
+                    className="py-1 px-6  text-2xl font-semibold transition-opacity duration-500 cursor-pointer opacity-60 dark:text-logo-text hover:opacity-100 focus:opacity-100"
                   >
                     {link}
                   </li>

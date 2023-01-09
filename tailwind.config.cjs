@@ -11,10 +11,10 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        "nav-background": "#202020",
+        "nav-background": "#141414",
         "logo-text": "#e3dbd3",
         backgrund: "#fafafa",
-        "dark-background": "#141414",
+        "dark-background": "#252525",
       },
       fontFamily: {
         name: ["Fredoka One", "cursive"],
