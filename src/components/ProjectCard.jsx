@@ -26,7 +26,7 @@ const ProjectCard = ({ name, stack, details, url, imageURL, setSelectId }) => {
         <a
           target="_blank"
           href={url}
-          className="text-blue-600 hover:underline hover:underline-offset-2"
+          className="text-blue-600 dark:text-blue-400 hover:underline hover:underline-offset-2"
         >
           {url}
         </a>
