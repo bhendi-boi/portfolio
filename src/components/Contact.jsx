@@ -23,7 +23,7 @@ const Contact = ({ scrollRef, handleScrollToTop }) => {
           <a
             aria-label="linkedin-icon"
             target="_blank"
-            href="https://www.linkedin.com/in/jyothikrishna-sajja-96bb45226/"
+            href="https://www.linkedin.com/in/jyothikrishnaSajja"
             title="Linked-in Profile"
             className="transition hover:scale-110 hover:text-blue-400"
           >
