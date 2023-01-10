@@ -1,6 +1,9 @@
 const Title = ({ name }) => {
   return (
-    <h2 className="my-4 text-5xl font-title font-semibold text-blue-700 dark:text-blue-500 capitalize">
+    <h2
+      id={name}
+      className="my-4 text-4xl font-semibold font-title tracking-wide text-gray-900 dark:text-neutral-50"
+    >
       {name}
     </h2>
   );

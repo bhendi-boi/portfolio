@@ -1,52 +1,60 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
-const Contact = ({ scrollRef }) => {
+import ScrollButton from "./ScrollButton";
+
+const Contact = ({ scrollRef, handleScrollToTop }) => {
   return (
-    <ul
-      role="list"
-      ref={scrollRef}
-      className="flex self-center justify-center col-span-2 gap-4 text-gray-900 dark:text-white"
-    >
-      <li>
-        <a
-          aria-label="github-icon"
-          target="_blank"
-          href="https://github.com/bhendi-boi"
-          title="Github Profile"
-        >
-          <BsGithub
-            size={36}
-            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
-          />
-        </a>
-      </li>
-      <li>
-        <a
-          aria-label="linkedin-icon"
-          target="_blank"
-          href="https://www.linkedin.com/in/jyothikrishna-sajja-96bb45226/"
-          title="Linked-in Profile"
-        >
-          <BsLinkedin
-            size={36}
-            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
-          />{" "}
-        </a>
-      </li>
-      <li>
-        <a
-          aria-label="gmail-icon"
-          target="_blank"
-          href="mailto:bhendiisgreen@gmail.com"
-          title="mail me"
-        >
-          <SiGmail
-            size={36}
-            className="transition duration-200 ease-in-out hover:scale-110 focus:scale-110"
-          />
-        </a>
-      </li>
-    </ul>
+    <div className="flex justify-center gap-6 text-gray-900 dark:text-white">
+      <ul
+        role="list"
+        ref={scrollRef}
+        className="flex self-center justify-center col-span-2 gap-4 text-lg font-medium font-chips"
+      >
+        <li>
+          <a
+            aria-label="github-icon"
+            target="_blank"
+            href="https://github.com/bhendi-boi"
+            title="Github Profile"
+            className="transition hover:scale-110 hover:text-blue-400"
+          >
+            Github
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="linkedin-icon"
+            target="_blank"
+            href="https://www.linkedin.com/in/jyothikrishnaSajja"
+            title="Linked-in Profile"
+            className="transition hover:scale-110 hover:text-blue-400"
+          >
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="gmail-icon"
+            target="_blank"
+            href="mailto:bhendiisgreen@gmail.com"
+            title="mail me"
+            className="transition hover:scale-110 hover:text-blue-400"
+          >
+            Gmail
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="devcommunity-icon"
+            target="_blank"
+            href="https://dev.to/bhendi"
+            title="Dev.to profile"
+            className="transition hover:scale-110 hover:text-blue-400"
+          >
+            Dev.to
+          </a>
+        </li>
+      </ul>
+      <ScrollButton small={true} handleScrollToTop={handleScrollToTop} />
+    </div>
   );
 };
 
